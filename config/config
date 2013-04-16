@@ -1,10 +1,10 @@
 [kde4_session]
-backend = kconfig4
+backend = ini
 integration = true
 plugin_list_autosort = true
 
 [kde_session]
-backend = kconfig
+backend = ini
 integration = true
 plugin_list_autosort = true
 
