@@ -1,6 +1,8 @@
 AC_PREREQ(2.57)
 
-AC_INIT([libcompizconfig],esyscmd(. ./VERSION;echo -n $VERSION), [dev@opencompositing.org])
+#AC_INIT([libcompizconfig],esyscmd(. ./VERSION;echo -n $VERSION), [dev@opencompositing.org])
+m4_define([libcompizconfig_version], [esyscmd(. ./VERSION;echo -n $VERSION)])
+AC_INIT([libcompizconfig],[libcompizconfig_version], [dev@opencompositing.org])
 
 #AC_CONFIG_AUX_DIR(config)
 
