@@ -1,21 +1,22 @@
-Source: libcompizconfig
+Source: libcompizfusionconfig
 Priority: extra
-Maintainer: Jasmine Hassan <jasmine.aura@gmail.com>
+Maintainer: Local User <user@localhost>
 Uploaders: Sean Finney <seanius@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
  autoconf, automake1.9, autotools-dev, libtool,
  pkg-config, libprotobuf-dev, protobuf-compiler,
- compiz-dev (>= 0.8.8), intltool, libglib2.0-dev, 
+ compizfusion-dev (>= 0.8.8), intltool, libglib2.0-dev, 
  libxml2-dev, libxslt1-dev,
  hardening-wrapper,
 Standards-Version: 3.9.3
 Section: libs
 
 
-Package: libcompizconfig0
+Package: libcompizfusionconfig0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-         compiz-core, compiz-core-abiversion-${coreabiversion}
+         compizfusion-core, compizfusion-core-abiversion-${coreabiversion}
+Conflicts: libcompizconfig0
 Description: Configuration settings library for compiz-fusion
  Compiz Fusion is the result of the re-unification of the Beryl-project
  and the community around the Compiz Window Manager. It seeks to provide
@@ -26,10 +27,11 @@ Description: Configuration settings library for compiz-fusion
  This package provides the libraries and runtime files for the compiz-fusion 
  configuration system.
 
-Package: libcompizconfig-dev
+Package: libcompizfusionconfig-dev
 Section: libdevel
 Architecture: any
-Depends: libcompizconfig0 (= ${binary:Version}), ${misc:Depends}
+Depends: libcompizfusionconfig0 (= ${binary:Version}), ${misc:Depends}
+Conflicts: libcompizconfig-dev
 Description: Configuration settings library for compiz-fusion - development files
  Compiz Fusion is the result of the re-unification of the Beryl-project
  and the community around the Compiz Window Manager. It seeks to provide

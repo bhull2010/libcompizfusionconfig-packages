@@ -1,3 +1,12 @@
+libcompizfusionconfig (0.8.8-1) unstable; urgency=low
+
+  * rename package to libcompizfusionconfig and conflict with
+    libcompizconfig0
+  * The ini backend will be used in all desktop environments
+    to remove the use of mateconf
+
+ -- Local User <user@localhost>  Tue, 16 Apr 2013 12:30:00 +0000
+
 libcompizconfig (0.8.8-1) unstable; urgency=low
 
   * new upstream release, non-maintainer fork.
