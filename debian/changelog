@@ -4,6 +4,7 @@ libcompizfusionconfig (0.8.8-1) unstable; urgency=low
     libcompizconfig0
   * The ini backend will be used in all desktop environments
     to remove the use of mateconf
+  * Fix automake deprecations
 
  -- Local User <user@localhost>  Tue, 16 Apr 2013 12:30:00 +0000
 

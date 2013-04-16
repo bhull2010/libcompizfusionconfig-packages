@@ -1,6 +1,5 @@
 AC_PREREQ(2.57)
 
-#AC_INIT([libcompizconfig],esyscmd(. ./VERSION;echo -n $VERSION), [dev@opencompositing.org])
 m4_define([libcompizconfig_version], [esyscmd(. ./VERSION;echo -n $VERSION)])
 AC_INIT([libcompizconfig],[libcompizconfig_version], [dev@opencompositing.org])
 
@@ -10,7 +9,7 @@ AM_INIT_AUTOMAKE([1.9 dist-bzip2])
 
 AC_PROG_CXX
 
-AC_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE
 
 AC_ISC_POSIX
